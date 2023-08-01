@@ -1,0 +1,164 @@
+/* styles.css */
+
+
+/* Reset some default styles for better consistency */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Add a background image or color to enhance the design */
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Styling for the submit button */
+
+.submit-button {
+    background-color: #ff386a;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #d7295f;
+}
+
+
+/* Style the form labels */
+
+form label {
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+}
+
+
+/* Style the textarea */
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+
+/* Additional styles for a more professional look */
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #ff386a;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    font-size: 1.6rem;
+}
+
+
+/* Media queries for responsiveness */
+
+
+/* For screens smaller than 768px (e.g., tablets and smartphones) */
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 0.5rem;
+    }
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav li {
+        margin-bottom: 0.5rem;
+    }
+    nav a {
+        padding: 0.5rem 1rem;
+        font-size: 1.6rem;
+    }
+}
+
+
+/* For screens smaller than 480px (e.g., smartphones) */
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.3rem;
+    }
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 1.6;
+    }
+    .submit-button {
+        padding: 10px 20px;
+        font-size: 1.4rem;
+    }
+    form label {
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+    }
+    textarea {
+        font-size: 1.6rem;
+    }
+    footer p {
+        font-size: 1.4rem;
+    }
+}
